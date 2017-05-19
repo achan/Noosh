@@ -3,3 +3,4 @@
 *.generated.swift
 
 Carthage
+build

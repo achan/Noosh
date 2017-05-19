@@ -1,5 +1,5 @@
 github "Quick/Nimble" ~> 7.0
 github "Quick/Quick" ~> 1.0
 github "ReactiveX/RxSwift" ~> 3.0
-github "sonsongithub/reddift" ~> 2.0
+github "sonsongithub/reddift" "master"
 github "vadymmarkov/Fakery" ~> 2.0
