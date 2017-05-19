@@ -1,0 +1,15 @@
+language: objective-c
+osx_image: xcode8.3
+env:
+  - PLATFORM="ios" SCHEME="Noosh" TARGET="NooshTests" DESTINATION="id=DB794781-65A7-4884-8D00-AAC3CBD39A44" SDK="iphonesimulator10.3"
+before_install:
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
+  - ./setup.sh
+before_script:
+  - xcodebuild -project Noosh.xcodeproj -list
+  - instruments -s devices
+script:
+  - set -o pipefail
+  - xcodebuild -project Noosh.xcodeproj -scheme $SCHEME -destination "$DESTINATION" -sdk "$SDK" test
+
