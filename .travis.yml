@@ -1,7 +1,7 @@
 language: objective-c
 osx_image: xcode8.3
 env:
-  - PLATFORM="ios" SCHEME="Noosh" TARGET="NooshTests" DESTINATION="id=DB794781-65A7-4884-8D00-AAC3CBD39A44" SDK="iphonesimulator10.3"
+  - PLATFORM="ios" SCHEME="Noosh" TARGET="NooshTests" DESTINATION="id=574DAFE4-A959-4ACD-8D60-511188465805" SDK="iphonesimulator10.3"
 before_install:
   - brew update
   - brew outdated carthage || brew upgrade carthage
