@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C6ECB041EC9226A00888BF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6ECB031EC9226A00888BF8 /* AppDelegate.swift */; };
+		8C6ECB061EC9226A00888BF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6ECB051EC9226A00888BF8 /* ViewController.swift */; };
+		8C6ECB0B1EC9226A00888BF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C6ECB0A1EC9226A00888BF8 /* Assets.xcassets */; };
+		8C6ECB171EC9240900888BF8 /* SubredditStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6ECB161EC9240900888BF8 /* SubredditStore.swift */; };
+		8C6ECB201EC927CE00888BF8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6ECB1C1EC927CE00888BF8 /* RxSwift.framework */; };
+		8C80672E1ECA87A0003137ED /* SubscribedSubredditsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80672D1ECA87A0003137ED /* SubscribedSubredditsStore.swift */; };
+		8C8067321ECA97D3003137ED /* SubscribedSubredditsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8067311ECA97D3003137ED /* SubscribedSubredditsAction.swift */; };
+		8C8067351ECAA774003137ED /* SubredditFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8067341ECAA774003137ED /* SubredditFactory.swift */; };
+		8C8067381ECAB2B3003137ED /* Dictionary+merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8067371ECAB2B3003137ED /* Dictionary+merge.swift */; };
+		8CAA9B761EC92CDC00FD0925 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6ECB1B1EC927CE00888BF8 /* RxTest.framework */; };
+		8CAA9B771EC92CDC00FD0925 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6ECB1E1EC927CE00888BF8 /* RxBlocking.framework */; };
+		8CAA9B7A1EC92CDC00FD0925 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAA9B781EC92CDC00FD0925 /* Quick.framework */; };
+		8CAA9B7B1EC92CDC00FD0925 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAA9B791EC92CDC00FD0925 /* Nimble.framework */; };
+		8CAA9B7F1EC92D4E00FD0925 /* SubscribedSubredditsStoreImplSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAA9B7E1EC92D4E00FD0925 /* SubscribedSubredditsStoreImplSpec.swift */; };
+		8CAA9B811EC92EF900FD0925 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6ECB1D1EC927CE00888BF8 /* RxCocoa.framework */; };
+		8CAA9B831EC9370E00FD0925 /* RedditClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAA9B821EC9370E00FD0925 /* RedditClient.swift */; };
+		8CAA9B861EC93B2400FD0925 /* SubredditsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAA9B851EC93B2400FD0925 /* SubredditsEndpoint.swift */; };
+		8CCDBB5E1ECD3A7F0080E055 /* Fakery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCDBB5D1ECD3A7F0080E055 /* Fakery.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C6ECB2D1EC929BA00888BF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C6ECAF81EC9226A00888BF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C6ECAFF1EC9226A00888BF8;
+			remoteInfo = Noosh;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C6ECB001EC9226A00888BF8 /* Noosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noosh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6ECB031EC9226A00888BF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C6ECB051EC9226A00888BF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C6ECB0A1EC9226A00888BF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C6ECB0F1EC9226A00888BF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C6ECB161EC9240900888BF8 /* SubredditStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubredditStore.swift; path = Stores/SubredditStore.swift; sourceTree = "<group>"; };
+		8C6ECB191EC927A600888BF8 /* Build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Build; path = Carthage/Build; sourceTree = "<group>"; };
+		8C6ECB1B1EC927CE00888BF8 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		8C6ECB1C1EC927CE00888BF8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		8C6ECB1D1EC927CE00888BF8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		8C6ECB1E1EC927CE00888BF8 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		8C6ECB281EC929BA00888BF8 /* NooshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NooshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6ECB2C1EC929BA00888BF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C80672D1ECA87A0003137ED /* SubscribedSubredditsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; name = SubscribedSubredditsStore.swift; path = Stores/SubscribedSubredditsStore.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		8C8067311ECA97D3003137ED /* SubscribedSubredditsAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribedSubredditsAction.swift; path = Stores/Actions/SubscribedSubredditsAction.swift; sourceTree = "<group>"; };
+		8C8067341ECAA774003137ED /* SubredditFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubredditFactory.swift; path = Factories/SubredditFactory.swift; sourceTree = "<group>"; };
+		8C8067371ECAB2B3003137ED /* Dictionary+merge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+merge.swift"; sourceTree = "<group>"; };
+		8CAA9B781EC92CDC00FD0925 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		8CAA9B791EC92CDC00FD0925 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		8CAA9B7E1EC92D4E00FD0925 /* SubscribedSubredditsStoreImplSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribedSubredditsStoreImplSpec.swift; path = Stores/SubscribedSubredditsStoreImplSpec.swift; sourceTree = "<group>"; };
+		8CAA9B821EC9370E00FD0925 /* RedditClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditClient.swift; sourceTree = "<group>"; };
+		8CAA9B851EC93B2400FD0925 /* SubredditsEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubredditsEndpoint.swift; sourceTree = "<group>"; };
+		8CCDBB5D1ECD3A7F0080E055 /* Fakery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fakery.framework; path = Carthage/Build/iOS/Fakery.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C6ECAFD1EC9226A00888BF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CAA9B811EC92EF900FD0925 /* RxCocoa.framework in Frameworks */,
+				8C6ECB201EC927CE00888BF8 /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C6ECB251EC929BA00888BF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCDBB5E1ECD3A7F0080E055 /* Fakery.framework in Frameworks */,
+				8CAA9B7A1EC92CDC00FD0925 /* Quick.framework in Frameworks */,
+				8CAA9B7B1EC92CDC00FD0925 /* Nimble.framework in Frameworks */,
+				8CAA9B761EC92CDC00FD0925 /* RxTest.framework in Frameworks */,
+				8CAA9B771EC92CDC00FD0925 /* RxBlocking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C6ECAF71EC9226A00888BF8 = {
+			isa = PBXGroup;
+			children = (
+				8C6ECB021EC9226A00888BF8 /* Noosh */,
+				8C6ECB291EC929BA00888BF8 /* NooshTests */,
+				8C6ECB011EC9226A00888BF8 /* Products */,
+				8C6ECB181EC927A600888BF8 /* Frameworks */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 1;
+		};
+		8C6ECB011EC9226A00888BF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C6ECB001EC9226A00888BF8 /* Noosh.app */,
+				8C6ECB281EC929BA00888BF8 /* NooshTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C6ECB021EC9226A00888BF8 /* Noosh */ = {
+			isa = PBXGroup;
+			children = (
+				8CAA9B841EC93A5C00FD0925 /* API */,
+				8C8067361ECAB29E003137ED /* Core */,
+				8C6ECB151EC923C200888BF8 /* Stores */,
+				8C6ECB031EC9226A00888BF8 /* AppDelegate.swift */,
+				8C6ECB0A1EC9226A00888BF8 /* Assets.xcassets */,
+				8C6ECB0F1EC9226A00888BF8 /* Info.plist */,
+				8C6ECB051EC9226A00888BF8 /* ViewController.swift */,
+			);
+			path = Noosh;
+			sourceTree = "<group>";
+		};
+		8C6ECB151EC923C200888BF8 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				8C8067301ECA97B5003137ED /* Actions */,
+				8C6ECB161EC9240900888BF8 /* SubredditStore.swift */,
+				8C80672D1ECA87A0003137ED /* SubscribedSubredditsStore.swift */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+		8C6ECB181EC927A600888BF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CCDBB5D1ECD3A7F0080E055 /* Fakery.framework */,
+				8CAA9B781EC92CDC00FD0925 /* Quick.framework */,
+				8CAA9B791EC92CDC00FD0925 /* Nimble.framework */,
+				8C6ECB1B1EC927CE00888BF8 /* RxTest.framework */,
+				8C6ECB1C1EC927CE00888BF8 /* RxSwift.framework */,
+				8C6ECB1D1EC927CE00888BF8 /* RxCocoa.framework */,
+				8C6ECB1E1EC927CE00888BF8 /* RxBlocking.framework */,
+				8C6ECB191EC927A600888BF8 /* Build */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C6ECB291EC929BA00888BF8 /* NooshTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C8067331ECAA73B003137ED /* Factories */,
+				8C80672F1ECA88A6003137ED /* Mocks */,
+				8CAA9B7C1EC92D1700FD0925 /* Stores */,
+				8C6ECB2C1EC929BA00888BF8 /* Info.plist */,
+			);
+			path = NooshTests;
+			sourceTree = "<group>";
+		};
+		8C80672F1ECA88A6003137ED /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
+		8C8067301ECA97B5003137ED /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				8C8067311ECA97D3003137ED /* SubscribedSubredditsAction.swift */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		8C8067331ECAA73B003137ED /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				8C8067341ECAA774003137ED /* SubredditFactory.swift */,
+			);
+			name = Factories;
+			sourceTree = "<group>";
+		};
+		8C8067361ECAB29E003137ED /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8C8067371ECAB2B3003137ED /* Dictionary+merge.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		8CAA9B7C1EC92D1700FD0925 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				8CAA9B7E1EC92D4E00FD0925 /* SubscribedSubredditsStoreImplSpec.swift */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+		8CAA9B841EC93A5C00FD0925 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8CAA9B821EC9370E00FD0925 /* RedditClient.swift */,
+				8CAA9B851EC93B2400FD0925 /* SubredditsEndpoint.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C6ECAFF1EC9226A00888BF8 /* Noosh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C6ECB121EC9226A00888BF8 /* Build configuration list for PBXNativeTarget "Noosh" */;
+			buildPhases = (
+				8C6ECB231EC9280200888BF8 /* Copy Frameworks (Carthage) */,
+				8C6ECAFC1EC9226A00888BF8 /* Sources */,
+				8C6ECAFD1EC9226A00888BF8 /* Frameworks */,
+				8C6ECAFE1EC9226A00888BF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Noosh;
+			productName = Noosh;
+			productReference = 8C6ECB001EC9226A00888BF8 /* Noosh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C6ECB271EC929BA00888BF8 /* NooshTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C6ECB2F1EC929BA00888BF8 /* Build configuration list for PBXNativeTarget "NooshTests" */;
+			buildPhases = (
+				8CCDBB5C1ECD3A030080E055 /* Copy Frameworks (Carthage) */,
+				8C6ECB241EC929BA00888BF8 /* Sources */,
+				8C6ECB251EC929BA00888BF8 /* Frameworks */,
+				8C6ECB261EC929BA00888BF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C6ECB2E1EC929BA00888BF8 /* PBXTargetDependency */,
+			);
+			name = NooshTests;
+			productName = NooshTests;
+			productReference = 8C6ECB281EC929BA00888BF8 /* NooshTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C6ECAF81EC9226A00888BF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Noosh;
+				TargetAttributes = {
+					8C6ECAFF1EC9226A00888BF8 = {
+						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					8C6ECB271EC929BA00888BF8 = {
+						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8C6ECAFF1EC9226A00888BF8;
+					};
+				};
+			};
+			buildConfigurationList = 8C6ECAFB1EC9226A00888BF8 /* Build configuration list for PBXProject "Noosh" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C6ECAF71EC9226A00888BF8;
+			productRefGroup = 8C6ECB011EC9226A00888BF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C6ECAFF1EC9226A00888BF8 /* Noosh */,
+				8C6ECB271EC929BA00888BF8 /* NooshTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C6ECAFE1EC9226A00888BF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6ECB0B1EC9226A00888BF8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C6ECB261EC929BA00888BF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C6ECB231EC9280200888BF8 /* Copy Frameworks (Carthage) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/reddift.framework",
+			);
+			name = "Copy Frameworks (Carthage)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		8CCDBB5C1ECD3A030080E055 /* Copy Frameworks (Carthage) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Fakery.framework",
+			);
+			name = "Copy Frameworks (Carthage)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C6ECAFC1EC9226A00888BF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6ECB171EC9240900888BF8 /* SubredditStore.swift in Sources */,
+				8C6ECB061EC9226A00888BF8 /* ViewController.swift in Sources */,
+				8C8067381ECAB2B3003137ED /* Dictionary+merge.swift in Sources */,
+				8C80672E1ECA87A0003137ED /* SubscribedSubredditsStore.swift in Sources */,
+				8C6ECB041EC9226A00888BF8 /* AppDelegate.swift in Sources */,
+				8CAA9B831EC9370E00FD0925 /* RedditClient.swift in Sources */,
+				8CAA9B861EC93B2400FD0925 /* SubredditsEndpoint.swift in Sources */,
+				8C8067321ECA97D3003137ED /* SubscribedSubredditsAction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C6ECB241EC929BA00888BF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CAA9B7F1EC92D4E00FD0925 /* SubscribedSubredditsStoreImplSpec.swift in Sources */,
+				8C8067351ECAA774003137ED /* SubredditFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C6ECB2E1EC929BA00888BF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C6ECAFF1EC9226A00888BF8 /* Noosh */;
+			targetProxy = 8C6ECB2D1EC929BA00888BF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8C6ECB101EC9226A00888BF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C6ECB111EC9226A00888BF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C6ECB131EC9226A00888BF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C974G5D47X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Noosh/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoschan.Noosh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8C6ECB141EC9226A00888BF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C974G5D47X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Noosh/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoschan.Noosh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8C6ECB301EC929BA00888BF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = NooshTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoschan.NooshTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Noosh.app/Noosh";
+			};
+			name = Debug;
+		};
+		8C6ECB311EC929BA00888BF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = NooshTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoschan.NooshTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Noosh.app/Noosh";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C6ECAFB1EC9226A00888BF8 /* Build configuration list for PBXProject "Noosh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C6ECB101EC9226A00888BF8 /* Debug */,
+				8C6ECB111EC9226A00888BF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C6ECB121EC9226A00888BF8 /* Build configuration list for PBXNativeTarget "Noosh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C6ECB131EC9226A00888BF8 /* Debug */,
+				8C6ECB141EC9226A00888BF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C6ECB2F1EC929BA00888BF8 /* Build configuration list for PBXNativeTarget "NooshTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C6ECB301EC929BA00888BF8 /* Debug */,
+				8C6ECB311EC929BA00888BF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C6ECAF81EC9226A00888BF8 /* Project object */;
+}
